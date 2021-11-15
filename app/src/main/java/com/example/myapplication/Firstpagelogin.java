@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Firstpage extends AppCompatActivity {
+public class Firstpagelogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firstpage);
+        setContentView(R.layout.activity_firstpagelogin);
     }
 }

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Firstpage"></activity>
+        <activity android:name=".Category"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Product" />
+        <activity android:name=".Firstpagelogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
