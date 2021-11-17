@@ -43,7 +43,7 @@ public class Firstpagelogin extends AppCompatActivity {
         goToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Register.class));
+                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
             }
         });
 
