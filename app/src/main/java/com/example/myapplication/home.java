@@ -20,7 +20,7 @@ import java.util.List;
 
 import Adapter.CategoryAdapter;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class home extends AppCompatActivity implements View.OnClickListener {
 
     RecyclerView recyclerView;
     CategoryAdapter adapter;
