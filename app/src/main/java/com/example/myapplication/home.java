@@ -1,6 +1,26 @@
 package com.example.myapplication;
 
-public class home extends AppCompatActivity implements View.OnClickListener {
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import dao.CategoryDAO;
+import model.Category;
+import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.List;
+
+import Adapter.CategoryAdapter;
+
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     RecyclerView recyclerView;
     CategoryAdapter adapter;
@@ -30,7 +50,7 @@ public class home extends AppCompatActivity implements View.OnClickListener {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.logOut) {
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            startActivity(new Intent(getApplicationContext(), Firstpagelogin.class));
             finish();
         }
         return super.onOptionsItemSelected(item);

@@ -1,6 +1,6 @@
 package dao;
 
-import com.apps.rsmart.R;
+import com.example.myapplication.R;
 
 
 import java.util.ArrayList;
