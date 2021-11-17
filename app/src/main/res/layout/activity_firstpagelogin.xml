@@ -28,21 +28,27 @@
             android:layout_marginTop="20dp"
             android:text="Login"
             android:textAlignment="center"
-             />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <EditText
             android:id="@+id/lEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-           />
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/lPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-           />
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/userLogin"
@@ -73,4 +79,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
