@@ -12,13 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import dao.CategoryDAO;
-import model.Category;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
 
 import Adapter.CategoryAdapter;
+import dao.CategoryDAO;
+import model.Category;
 
 public class home extends AppCompatActivity implements View.OnClickListener {
 
