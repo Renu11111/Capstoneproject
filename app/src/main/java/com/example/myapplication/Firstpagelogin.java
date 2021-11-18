@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.content.Intent;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 

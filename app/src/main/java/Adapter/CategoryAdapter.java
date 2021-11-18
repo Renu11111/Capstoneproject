@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.myapplication.R;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,7 +17,7 @@ import java.util.List;
 
 import model.Category;
 
-import static android.os.Build.VERSION_CODES.R;
+
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
     Context context;
@@ -32,9 +33,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @NonNull
     @Override
     public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        //  View view = LayoutInflater.from(context).inflate(R.layout.activity_category, parent, false);
-        // return new CategoryViewHolder(view);
-        return null;
+          View view = LayoutInflater.from(context).inflate(R.layout.activity_category, parent, false);
+         return new CategoryViewHolder(view);
+
     }
 
 
@@ -59,9 +60,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
-          //  txt = itemView.findViewById(R.id.txt_category);
-         //   btn = itemView.findViewById(R.id.btn_view);
-         //   imageView = itemView.findViewById(R.id.image_category);
+           txt = itemView.findViewById(R.id.txt_category);
+          btn = itemView.findViewById(R.id.btn_view);
+          imageView = itemView.findViewById(R.id.image_category);
             btn.setOnClickListener(clickListener);
         }
     }
