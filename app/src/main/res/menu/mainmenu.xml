@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
     <menu xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/goHome"
+        android:title="Home"
+        app:showAsAction="never"/>
+    <item android:id="@+id/viewCart"
+        android:title="View Cart"
+        app:showAsAction="never"/>
+    <item android:id="@+id/viewOrders"
+        android:title="My Orders"
+        app:showAsAction="never"/>
+    <item android:id="@+id/viewContact"
+        android:title="Contact Us"
+        app:showAsAction="never"/>
         <item android:id="@+id/logOut"
             android:title="Log Out"
             app:showAsAction="never"/>
