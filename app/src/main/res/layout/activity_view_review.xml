@@ -6,17 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
-    <Button android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_place"
-        android:text="Place Order"
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/txt_product_name"
+        android:text="Text"
         android:background="@color/purple_500"
         android:textColor="@color/white"
-        android:layout_alignParentBottom="true"
-        android:tooltipText="Click to Place Order"/>
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recylerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true" android:layout_above="@id/btn_place" />
+        android:layout_below="@id/txt_product_name" />
 </RelativeLayout>
