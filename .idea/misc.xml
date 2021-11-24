@@ -3,19 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Post graduation/Capstone/app/src/main/res/drawable/nopic.xml" value="0.2203125" />
-        <entry key="..\:/Post graduation/Capstone/app/src/main/res/layout/activity_contact.xml" value="0.20416666666666666" />
-        <entry key="..\:/Post graduation/Capstone/app/src/main/res/layout/activity_my_orders.xml" value="0.19010416666666666" />
-        <entry key="..\:/Post graduation/Capstone/app/src/main/res/layout/activity_product_details.xml" value="0.1" />
-        <entry key="..\:/Post graduation/Capstone/app/src/main/res/layout/activity_view_cart.xml" value="0.19010416666666666" />
-        <entry key="..\:/Post graduation/Capstone/app/src/main/res/menu/mainmenu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/activity_category.xml" value="0.13134057971014493" />
         <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/activity_firstpagelogin.xml" value="0.12273550724637682" />
         <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/activity_main.xml" value="0.11639492753623189" />
+        <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/activity_my_orders.xml" value="0.12409420289855072" />
         <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/activity_product.xml" value="0.11639492753623189" />
         <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/activity_register.xml" value="0.11639492753623189" />
+        <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/cart_item_row.xml" value="0.11231884057971014" />
         <entry key="..\:/Users/Admin/Downloads/Capstoneproject/app/src/main/res/layout/home.xml" value="0.11639492753623189" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22871376811594202" />
       </map>
     </option>
   </component>
