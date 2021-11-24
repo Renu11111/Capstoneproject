@@ -1,0 +1,129 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.utp",
+    "module": "android-test-plugin-host-retention-proto",
+    "version": "30.0.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.32"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "android-test-plugin-host-retention-proto-30.0.2.jar",
+          "url": "android-test-plugin-host-retention-proto-30.0.2.jar",
+          "size": 39328,
+          "sha512": "5864a65b3b00b13c28a7e3be30e2fd1a8d04aaab1aa620dafffba1b29a55a03cc3b9d942f3406fbcc691b736c680925e93364b6a4e2941bd74408470ff62dc01",
+          "sha256": "27fd6fa34f2d67aded07438c282946b6c222684135e88c90f81990052177f935",
+          "sha1": "ded90aad2fe56424bf21b524631480a794a2eed6",
+          "md5": "bac129fb19d44f86a04760fac04e9530"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.32"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "android-test-plugin-host-retention-proto-30.0.2.jar",
+          "url": "android-test-plugin-host-retention-proto-30.0.2.jar",
+          "size": 39328,
+          "sha512": "5864a65b3b00b13c28a7e3be30e2fd1a8d04aaab1aa620dafffba1b29a55a03cc3b9d942f3406fbcc691b736c680925e93364b6a4e2941bd74408470ff62dc01",
+          "sha256": "27fd6fa34f2d67aded07438c282946b6c222684135e88c90f81990052177f935",
+          "sha1": "ded90aad2fe56424bf21b524631480a794a2eed6",
+          "md5": "bac129fb19d44f86a04760fac04e9530"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "android-test-plugin-host-retention-proto-30.0.2-javadoc.jar",
+          "url": "android-test-plugin-host-retention-proto-30.0.2-javadoc.jar",
+          "size": 451214,
+          "sha512": "8aa14b3c79621084a537306770cad45dc5fbcac4eb85c20595fb39944a9b66ab6cc0a0a40f9a60fc3993d4c6ee2042692f29b080bbc7c5c173eac4f79e875782",
+          "sha256": "90b2ed1957a9428f0098cbdf0911e828cb7233a78027956314840aa7edf3b935",
+          "sha1": "135f225c0a2e748cd23bf96fccb592739e6820b8",
+          "md5": "5a44d997593db2b0498c7d8b921fc8d3"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "android-test-plugin-host-retention-proto-30.0.2-sources.jar",
+          "url": "android-test-plugin-host-retention-proto-30.0.2-sources.jar",
+          "size": 16525,
+          "sha512": "00c87bc436f5a18b9b6289f7ecd0066e73481a40da8dcfbddaf5986a38a1b85acf7ce42e7dd571de8b484285b23df26229b73095d231b3193dcc5e04fe74ea0d",
+          "sha256": "1cc073a66671b302a631b9545858ccbb1fb192577cd53301a7683ccd8ebc2d8c",
+          "sha1": "866a3ed9eb4d132e4ef168df17508614197a5aed",
+          "md5": "0ab5b5fada9d251df198a07b3a1835e7"
+        }
+      ]
+    }
+  ]
+}
