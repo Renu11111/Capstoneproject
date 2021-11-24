@@ -20,7 +20,6 @@
             android:name=".ContactActivity"
             android:exported="false" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".Product" />
         <activity android:name=".Firstpagelogin" />
         <activity
             android:name=".MainActivity"
