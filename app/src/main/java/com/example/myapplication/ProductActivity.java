@@ -24,8 +24,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.myapplication.adapter.ProductListAdapter;
-import com.example.myapplication.model.Category;
+import Adapter.ProductListAdapter;
+import model.Category;
 
 public class ProductActivity extends AppCompatActivity implements View.OnClickListener {
 

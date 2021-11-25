@@ -27,11 +27,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.example.myapplication.adapter.CartItemListAdapter;
-import com.example.myapplication.database.Cart;
-import com.example.myapplication.database.CartDao;
-import com.example.myapplication.database.OrdersDao;
-import com.example.myapplication.database.RSMartDatabase;
+import Adapter.CartItemListAdapter;
+import Database.Cart;
+import Database.CartDao;
+import Database.OrdersDao;
+import Database.RSMartDatabase;
 
 public class ViewCartActivity extends AppCompatActivity {
     private RSMartDatabase rsMartDatabase;
