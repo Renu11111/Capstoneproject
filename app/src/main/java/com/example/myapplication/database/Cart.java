@@ -1,4 +1,4 @@
-package Database;
+package com.example.myapplication.database;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;

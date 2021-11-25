@@ -1,9 +1,11 @@
-package Database;
+package com.example.myapplication.database;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
+
+import com.example.myapplication.database.Orders;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Adapter;
+package com.example.myapplication.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.myapplication.R;
 
 import java.util.List;
 
@@ -19,7 +21,6 @@ public class CartItemListAdapter<CartItem> extends RecyclerView.Adapter<CartItem
         this.context = context;
         this.cartItemList = cartItemList;
     }
-
     @NonNull
     @Override
     public CartItemListAdapter.CartItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

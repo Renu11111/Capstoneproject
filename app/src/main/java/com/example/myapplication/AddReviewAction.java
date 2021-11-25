@@ -11,7 +11,8 @@ import android.widget.PopupWindow;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
-import com.google.android.gms.analytics.ecommerce.Product;
+
+import com.example.myapplication.model.Product;
 import com.google.firebase.database.DatabaseReference;
 public class AddReviewAction {
     private Product product;

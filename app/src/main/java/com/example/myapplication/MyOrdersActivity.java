@@ -17,9 +17,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import Database.Orders;
-import Database.OrdersDao;
-import Database.RSMartDatabase;
+import com.example.myapplication.database.Orders;
+import com.example.myapplication.database.OrdersDao;
+import com.example.myapplication.database.RSMartDatabase;
 
 public class MyOrdersActivity extends AppCompatActivity {
 

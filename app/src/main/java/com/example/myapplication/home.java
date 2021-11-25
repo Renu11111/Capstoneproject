@@ -16,9 +16,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
 
-import Adapter.CategoryAdapter;
-import dao.CategoryDAO;
-import model.Category;
+import com.example.myapplication.adapter.CategoryAdapter;
+import com.example.myapplication.dao.CategoryDAO;
+import com.example.myapplication.model.Category;
 
 public class home extends AppCompatActivity implements View.OnClickListener {
 

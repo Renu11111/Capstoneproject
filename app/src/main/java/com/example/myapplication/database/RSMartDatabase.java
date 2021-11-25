@@ -1,4 +1,4 @@
-package Database;
+package com.example.myapplication.database;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Cart.class,Orders.class}, version = 1, exportSchema = false)
+@Database(entities = {Cart.class, Orders.class}, version = 1, exportSchema = false)
 public abstract class RSMartDatabase extends RoomDatabase {
     public abstract CartDao cartDao();
     public abstract OrdersDao ordersDao();

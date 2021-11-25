@@ -19,9 +19,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import Database.Cart;
-import Database.CartDao;
-import Database.RSMartDatabase;
+import com.example.myapplication.database.Cart;
+import com.example.myapplication.database.CartDao;
+import com.example.myapplication.database.RSMartDatabase;
 
 public class ProductDetailsActivity extends AppCompatActivity {
 

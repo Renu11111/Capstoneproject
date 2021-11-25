@@ -1,4 +1,4 @@
-package Adapter;
+package com.example.myapplication.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import model.Category;
+import com.example.myapplication.model.Category;
 
 
 

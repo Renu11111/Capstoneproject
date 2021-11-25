@@ -21,11 +21,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-import Adapter.CartItemListAdapter;
-import Database.Cart;
-import Database.CartDao;
-import Database.OrdersDao;
-import Database.RSMartDatabase;
+import com.example.myapplication.adapter.CartItemListAdapter;
+import com.example.myapplication.database.Cart;
+import com.example.myapplication.database.CartDao;
+import com.example.myapplication.database.OrdersDao;
+import com.example.myapplication.database.RSMartDatabase;
 
 public class ViewCartActivity extends AppCompatActivity {
     private RSMartDatabase rsMartDatabase;

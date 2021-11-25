@@ -1,4 +1,4 @@
-package dao;
+package com.example.myapplication.dao;
 
 import com.example.myapplication.R;
 
@@ -6,7 +6,7 @@ import com.example.myapplication.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Category;
+import com.example.myapplication.model.Category;
 
 public class CategoryDAO {
     public static List<Category> getAllCategories(){
