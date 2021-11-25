@@ -1,6 +1,31 @@
 package com.example.myapplication;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Adapter.CartItemListAdapter;
+import Database.Cart;
+import Database.CartDao;
+import Database.OrdersDao;
+import Database.RSMartDatabase;
 
 public class ViewCartActivity extends AppCompatActivity {
     private RSMartDatabase rsMartDatabase;
@@ -112,7 +137,7 @@ public class ViewCartActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.logOut) {
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            startActivity(new Intent(getApplicationContext(), Firstpagelogin.class));
             finish();
         }else if(item.getItemId() == R.id.viewCart){
             startActivity(new Intent(getApplicationContext(), ViewCartActivity.class));
@@ -121,7 +146,7 @@ public class ViewCartActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), MyOrdersActivity.class));
             finish();
         }else if(item.getItemId() == R.id.goHome){
-            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            startActivity(new Intent(getApplicationContext(), home.class));
             finish();
         }else if(item.getItemId() == R.id.viewContact){
             startActivity(new Intent(getApplicationContext(), ContactActivity.class));

@@ -1,5 +1,18 @@
 package com.example.myapplication;
 
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
+import android.widget.RatingBar;
+import android.widget.Toast;
+
+import com.google.android.gms.analytics.ecommerce.Product;
+import com.google.firebase.database.DatabaseReference;
 public class AddReviewAction {
     private Product product;
     private String email;

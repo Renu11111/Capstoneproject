@@ -1,11 +1,30 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.analytics.ecommerce.Product;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Adapter.ProductListAdapter;
 import model.Category;
 
 public class ProductActivity extends AppCompatActivity implements View.OnClickListener {
@@ -67,7 +86,7 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
             if (button.getTag() != null && button.getTag() instanceof Product) {
                 Product product = (Product) button.getTag();
                 Intent intent = new Intent(getApplicationContext(), ProductDetailsActivity.class);
-                intent.putExtra("product", product);
+                intent.putExtra( "product", product);
                 startActivity(intent);
                 finish();
             }
@@ -85,7 +104,7 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.logOut) {
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            startActivity(new Intent(getApplicationContext(), Firstpagelogin.class));
             finish();
         } else if (item.getItemId() == R.id.viewCart) {
             startActivity(new Intent(getApplicationContext(), ViewCartActivity.class));
@@ -94,7 +113,7 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
             startActivity(new Intent(getApplicationContext(), MyOrdersActivity.class));
             finish();
         } else if (item.getItemId() == R.id.goHome) {
-            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            startActivity(new Intent(getApplicationContext(), home.class));
             finish();
         } else if (item.getItemId() == R.id.viewContact) {
             startActivity(new Intent(getApplicationContext(), ContactActivity.class));
