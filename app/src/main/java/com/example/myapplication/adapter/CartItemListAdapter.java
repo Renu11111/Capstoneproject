@@ -10,10 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.model.CartItem;
 
 import java.util.List;
 
-public class CartItemListAdapter<CartItem> extends RecyclerView.Adapter<CartItemListAdapter.CartItemViewHolder> {
+
+public class CartItemListAdapter extends RecyclerView.Adapter<CartItemListAdapter.CartItemViewHolder>  {
     Context context;
     List<CartItem> cartItemList;
 
@@ -21,6 +23,7 @@ public class CartItemListAdapter<CartItem> extends RecyclerView.Adapter<CartItem
         this.context = context;
         this.cartItemList = cartItemList;
     }
+
     @NonNull
     @Override
     public CartItemListAdapter.CartItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -41,6 +44,7 @@ public class CartItemListAdapter<CartItem> extends RecyclerView.Adapter<CartItem
     public int getItemCount() {
         return cartItemList.size();
     }
+
     public class CartItemViewHolder extends RecyclerView.ViewHolder{
 
         TextView txt1,txt2,txt3,txt4;

@@ -4,24 +4,23 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
+
 import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.apps.rsmart.R;
-import com.apps.rsmart.model.Category;
-import com.apps.rsmart.model.Review;
+import com.example.myapplication.R;
+import com.example.myapplication.model.Review;
 
 import java.util.List;
+
 public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.ReviewViewHolder>  {
         Context context;
         List<Review> reviews;
 
-public ReviewListAdapter(Context context,List<Review> reviews){
+public ReviewListAdapter(Context context, List<Review> reviews){
         this.context = context;
         this.reviews = reviews;
         }
