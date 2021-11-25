@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication">
+    package="com.app.myapplication">
 
     <application
         android:allowBackup="true"
@@ -11,18 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".ViewCartActivity"
+            android:name="com.app.myapplication.ViewCartActivity"
             android:exported="false" />
         <activity
-            android:name=".MyOrdersActivity"
+            android:name="com.app.myapplication.home"
             android:exported="false" />
         <activity
-            android:name=".ContactActivity"
+            android:name="com.app.myapplication.MyOrdersActivity"
             android:exported="false" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".Firstpagelogin" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.app.myapplication.ContactActivity"
+            android:exported="false" />
+        <activity android:name="com.app.myapplication.RegisterActivity" />
+        <activity android:name="com.app.myapplication.Firstpagelogin" />
+        <activity
+            android:name="com.app.myapplication.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
