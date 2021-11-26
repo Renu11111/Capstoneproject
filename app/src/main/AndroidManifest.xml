@@ -17,6 +17,9 @@
             android:name="com.app.myapplication.home"
             android:exported="false" />
         <activity
+            android:name="com.app.myapplication.ProductActivity"
+            android:exported="false" />
+        <activity
             android:name="com.app.myapplication.MyOrdersActivity"
             android:exported="false" />
         <activity

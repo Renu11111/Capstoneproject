@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +19,7 @@ import com.app.myapplication.adapter.CategoryAdapter;
 import com.app.myapplication.dao.CategoryDAO;
 import com.app.myapplication.model.Category;
 import com.google.firebase.auth.FirebaseAuth;
+
 
 import java.util.List;
 
@@ -53,6 +56,17 @@ public class home extends AppCompatActivity implements View.OnClickListener {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(getApplicationContext(), Firstpagelogin.class));
             finish();
+        }else if(item.getItemId() == R.id.viewCart){
+            startActivity(new Intent(getApplicationContext(), ViewCartActivity.class));
+            finish();
+        }else if(item.getItemId() == R.id.viewOrders){
+            startActivity(new Intent(getApplicationContext(), MyOrdersActivity.class));
+            finish();
+        }else if(item.getItemId() == R.id.goHome){
+            Toast.makeText(this, "You Already in Home Screen.", Toast.LENGTH_SHORT).show();
+        }else if(item.getItemId() == R.id.viewContact){
+            startActivity(new Intent(getApplicationContext(), ContactActivity.class));
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -61,8 +75,12 @@ public class home extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         if(v instanceof Button){
             Button button = (Button) v;
-            if(button.getTag() instanceof Category){
+            if(button.getTag() != null && button.getTag() instanceof Category){
                 Category category = (Category) button.getTag();
+                Intent intent = new Intent(getApplicationContext(),ProductActivity.class);
+              //  intent.putExtra("category", category);
+                startActivity(intent);
+                finish();
             }
         }
     }
