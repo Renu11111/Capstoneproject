@@ -1,6 +1,5 @@
 package com.app.myapplication;
 
-import static android.app.ProgressDialog.show;
 
 import android.content.Intent;
 import android.os.Bundle;

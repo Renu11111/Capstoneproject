@@ -3,7 +3,7 @@ package com.app.myapplication.model;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ProductList {
+public class ProductList  {
 
     public Map<String, Product> products = new HashMap<>();
 

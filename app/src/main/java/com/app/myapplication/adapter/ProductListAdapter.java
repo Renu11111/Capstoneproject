@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.myapplication.R;
 import com.app.myapplication.model.Product;
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -40,7 +41,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
         holder.txt1.setText(product.name);
         holder.txt2.setText("$" + product.sale_price);
         holder.btn.setTag(product);
-        //Glide.with(context).load(product.image_url).into(holder.imageView);
+        Glide.with(context).load(product.image_url).into(holder.imageView);
     }
 
     @Override

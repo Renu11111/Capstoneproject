@@ -56,16 +56,22 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
     private void fetchProductDetails() {
         database = FirebaseDatabase.getInstance();
         productsRef = database.getReference("products");
-
+        Log.d("IMPO", "Test1");
         productsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Log.d("IMPO", "HERE");
                 products.clear();
                 for (DataSnapshot keys : snapshot.getChildren()) {
+                    Log.d("IMPO", "Test2");
                     Product product = keys.getValue(Product.class);
+                    Log.d("IMPO", product.toString());
                     if (category != null && category.getCategoryId().equals(product.category_id)) {
                         products.add(product);
+                        Log.d("IMPO", "Test3");
+                    }
+                    else {
+                        Log.d("IMPO", product.category_id+category);
                     }
                 }
                 Log.d("IMPO", products.toString());

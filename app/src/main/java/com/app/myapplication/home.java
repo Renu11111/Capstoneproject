@@ -78,7 +78,7 @@ public class home extends AppCompatActivity implements View.OnClickListener {
             if(button.getTag() != null && button.getTag() instanceof Category){
                 Category category = (Category) button.getTag();
                 Intent intent = new Intent(getApplicationContext(),ProductActivity.class);
-              //  intent.putExtra("category", category);
+                intent.putExtra("category", category);
                 startActivity(intent);
                 finish();
             }

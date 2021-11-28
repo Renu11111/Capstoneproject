@@ -51,6 +51,7 @@ public class ViewReviewActivity extends AppCompatActivity {
         reviews = new ArrayList<>();
 
         recyclerView = findViewById(R.id.recylerView);
+        textView = findViewById(R.id.txt_product_name);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new ReviewListAdapter(this, reviews);

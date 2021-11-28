@@ -3,7 +3,8 @@ package com.app.myapplication.model;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class CartItem implements Serializable {
+public class
+CartItem implements Serializable {
 
     public String name;
     public double price;
