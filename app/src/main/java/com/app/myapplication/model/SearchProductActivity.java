@@ -146,7 +146,7 @@ public class SearchProductActivity extends AppCompatActivity implements View.OnC
         }else if(item.getItemId() == R.id.viewContact){
             startActivity(new Intent(getApplicationContext(), ContactActivity.class));
             finish();
-        }else if(item.getItemId() == R.id.viewSearch){
+        }else if(item.getItemId() == R.id.et_search){
             Toast.makeText(this, "You already inside Search Activity.", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);

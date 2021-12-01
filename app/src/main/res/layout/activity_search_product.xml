@@ -15,7 +15,8 @@
         android:ems="10"
         android:hint="Search"/>
     <Button android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/btn_search"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search"
         android:text="Search"
         android:background="@color/purple_500"
         android:textColor="@color/white"
