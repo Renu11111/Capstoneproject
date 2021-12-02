@@ -1,9 +1,8 @@
-package com.app.myapplication.model;
+package com.app.myapplication;
 
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,15 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.app.myapplication.ContactActivity;
-import com.app.myapplication.Firstpagelogin;
-import com.app.myapplication.MyOrdersActivity;
-import com.app.myapplication.ProductDetailsActivity;
-import com.app.myapplication.R;
-import com.app.myapplication.ViewCartActivity;
 import com.app.myapplication.adapter.ProductListAdapter;
-import com.app.myapplication.home;
 
+import com.app.myapplication.model.Category;
+import com.app.myapplication.model.Product;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -146,7 +140,7 @@ public class SearchProductActivity extends AppCompatActivity implements View.OnC
         }else if(item.getItemId() == R.id.viewContact){
             startActivity(new Intent(getApplicationContext(), ContactActivity.class));
             finish();
-        }else if(item.getItemId() == R.id.et_search){
+        }else if(item.getItemId() == R.id.viewSearch){
             Toast.makeText(this, "You already inside Search Activity.", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
