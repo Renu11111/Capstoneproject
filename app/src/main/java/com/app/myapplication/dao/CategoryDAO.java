@@ -20,7 +20,6 @@ public class CategoryDAO {
         categories.add(new Category("PR","Produce", R.drawable.produce));
         categories.add(new Category("CL","Cleaners", R.drawable.cleaner));
         categories.add(new Category("PG","Paper Goods", R.drawable.papers));
-        categories.add(new Category("OT","Others", R.drawable.others));
         return categories;
     }
 }

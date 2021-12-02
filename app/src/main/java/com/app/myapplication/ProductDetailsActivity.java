@@ -20,6 +20,7 @@ import com.app.myapplication.database.CartDao;
 import com.app.myapplication.database.RSMartDatabase;
 
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -72,7 +73,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
             txt_product_description.setText(product.description);
             txt_price.setText("$ " + product.price);
             txt_sale_price.setText("$" + product.sale_price);
-          //  Glide.with(this).load(product.image_url).into(image_product);
+           Glide.with(this).load(product.image_url).into(image_product);
         }
         btn_view_review.setOnClickListener(new View.OnClickListener() {
             @Override
