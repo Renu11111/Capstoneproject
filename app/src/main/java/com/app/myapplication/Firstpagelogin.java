@@ -68,7 +68,7 @@ public class Firstpagelogin extends AppCompatActivity {
                     return;
                 }
 
-                progressBar.setVisibility(View.VISIBLE);
+               progressBar.setVisibility(View.VISIBLE);
 
                 rAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
