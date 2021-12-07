@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -98,6 +99,9 @@ public class MyOrdersActivity extends AppCompatActivity {
         }else if(item.getItemId() == R.id.viewContact){
             startActivity(new Intent(getApplicationContext(), ContactActivity.class));
             finish();
+        }
+        else if(item.getItemId() == R.id.viewSearch){
+            Toast.makeText(this, "You already inside Search Activity.", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

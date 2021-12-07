@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -125,6 +126,12 @@ public class ProductActivity extends AppCompatActivity implements View.OnClickLi
             startActivity(new Intent(getApplicationContext(), ContactActivity.class));
             finish();
         }
+        else if(item.getItemId() == R.id.viewSearch){
+            Toast.makeText(this, "You already inside Search Activity.", Toast.LENGTH_SHORT).show();
+        }
+
+
+
         return super.onOptionsItemSelected(item);
     }
 }
