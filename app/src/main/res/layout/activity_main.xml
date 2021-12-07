@@ -27,27 +27,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/t1"
-        android:text="RS"
+        android:text="RSmart"
         android:textSize="60dp"
         android:textColor="@color/white"
-        android:paddingLeft="100dp"
+        android:paddingLeft="70dp"
         android:paddingTop="100dp"
         tools:ignore="MissingConstraints"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/t2"
-        android:text="Mart"
-        android:textSize="60dp"
+        android:text="We deliver quality products"
+        android:textSize="30dp"
         android:textColor="@color/white"
+        android:paddingTop="190dp"
         android:paddingLeft="140dp"
-        android:paddingTop="160dp"
         tools:ignore="MissingConstraints" />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/firstpagepicture"
-        android:paddingTop="180dp"
+        android:paddingTop="200dp"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
