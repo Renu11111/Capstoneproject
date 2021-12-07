@@ -73,6 +73,9 @@ public class ContactActivity extends AppCompatActivity {
         }else if(item.getItemId() == R.id.viewContact){
             Toast.makeText(this, "You Already in Contact Us Screen.", Toast.LENGTH_SHORT).show();
         }
+        else if(item.getItemId() == R.id.viewSearch){
+            Toast.makeText(this, "You already inside Search Activity.", Toast.LENGTH_SHORT).show();
+        }
         return super.onOptionsItemSelected(item);
     }
 }
