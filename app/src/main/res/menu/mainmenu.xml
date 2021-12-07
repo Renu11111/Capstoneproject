@@ -10,6 +10,9 @@
     <item android:id="@+id/viewOrders"
         android:title="My Orders"
         app:showAsAction="never"/>
+    <item android:id="@+id/viewSearch"
+        android:title="Search"
+        app:showAsAction="never"/>
     <item android:id="@+id/viewContact"
         android:title="Contact Us"
         app:showAsAction="never"/>

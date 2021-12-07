@@ -27,6 +27,9 @@
             android:name="com.app.myapplication.MyOrdersActivity"
             android:exported="false" />
         <activity
+            android:name="com.app.myapplication.SearchProductActivity"
+            android:exported="false" />
+        <activity
             android:name="com.app.myapplication.ViewReviewActivity"
             android:exported="false" />
         <activity
